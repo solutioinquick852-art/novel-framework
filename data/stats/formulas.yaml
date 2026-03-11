@@ -1,0 +1,59 @@
+# 数值计算公式定义
+
+# ==================== 伤害公式 ====================
+damage:
+  # 基础伤害
+  basic_attack: "attack * 1.0"
+  
+  # 技能伤害
+  skill_damage: "attack * skill_multiplier + level * level_bonus"
+  
+  # 暴击伤害
+  critical_damage: "damage * 2.0"
+
+# ==================== 防御公式 ====================
+defense:
+  # 伤害减免
+  damage_reduction: "defense / (defense + 100)"
+  
+  # 实际伤害
+  actual_damage: "max(1, raw_damage * (1 - damage_reduction))"
+
+# ==================== 修炼公式 ====================
+cultivation:
+  # 突破成功率
+  breakthrough_rate:
+    base: 30                    # 基础成功率%
+    with_pill: 70               # 使用丹药成功率%
+    with_opportunity: 90        # 特殊机缘成功率%
+  
+  # 修炼速度
+  cultivation_speed: "base_speed * (1 + talent_bonus / 100)"
+
+# ==================== 等级经验 ====================
+experience:
+  # 升级所需经验
+  level_up: "base_exp * level ^ 1.5"
+  
+  # 基础经验值
+  base_exp: 100
+
+# ==================== 示例技能公式 ====================
+skills:
+  - id: "skill_flame_slash"
+    name: "烈焰斩"
+    formula: "attack * 2.8 + level * 15"
+    mp_cost: 50
+    cooldown: 3
+  
+  - id: "skill_wind_step"
+    name: "疾风步"
+    effect: "闪避率+15%，速度+30"
+    mp_cost: 20
+    duration: 5
+  
+  - id: "skill_basic_sword"
+    name: "基础剑法"
+    formula: "attack * 1.5"
+    mp_cost: 0
+    cooldown: 0

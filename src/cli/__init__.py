@@ -1,0 +1,4 @@
+"""CLI模块"""
+from .main import main
+
+__all__ = ["main"]

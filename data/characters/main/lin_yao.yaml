@@ -1,0 +1,42 @@
+# 配角：林瑶
+# 示例角色数据
+
+# ==================== 基本信息 ====================
+id: "char_lin_yao"
+name: "林瑶"
+role: "support"              # protagonist/antagonist/support
+first_appear: 1
+
+# ==================== 角色设定 ====================
+profile:
+  full_name: "林瑶"
+  age: 17
+  gender: "女"
+  origin: "青云镇"
+  
+  appearance: |
+    容貌秀丽，肌肤胜雪，眼眸如星。
+    常穿淡蓝色长裙，气质清新脱俗。
+  
+  personality:
+    traits: ["温柔", "聪慧", "善解人意", "坚强"]
+    speech_style: "轻声细语，但关键时刻异常坚定"
+  
+  background: |
+    青云镇林家大小姐，与叶凡青梅竹马。
+    天赋出众，是家族重点培养对象。
+    在叶凡落魄时依然不离不弃。
+
+# ==================== 当前状态 ====================
+current_state:
+  chapter: 1
+  cultivation_level: "炼气一层"
+  faction: "林家"
+  location: "青云镇"
+
+# ==================== 关系网络 ====================
+relationships:
+  - target_id: "char_ye_fan"
+    type: "lover"
+    since_chapter: 1
+    description: "青梅竹马，情投意合"

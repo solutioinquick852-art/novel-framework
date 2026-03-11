@@ -1,0 +1,17 @@
+# 已完成伏笔列表
+
+# ==================== 已完成伏笔 ====================
+foreshadowing: []
+# 示例：
+# - id: "fs_000_example"
+#   type: "事件"
+#   title: "示例已揭示伏笔"
+#   importance: "minor"
+#   planted:
+#     chapter: 1
+#     description: "埋设描述"
+#   reveal:
+#     planned_chapter: 10
+#     actual_chapter: 12
+#     description: "揭示描述"
+#   completed_date: "2026-03-11"
