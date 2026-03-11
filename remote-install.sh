@@ -6,7 +6,7 @@ set -e
 
 # 配置
 REPO_USER="solutioinquick852-art"
-REPO_USER="solutioinquick852-art"
+REPO_NAME="novel-framework"
 INSTALL_VERSION="latest"
 
 # 颜色
