@@ -1,0 +1,76 @@
+# 修炼体系设定
+
+# ==================== 修炼体系 ====================
+system:
+  name: "天道修炼体系"
+  type: "等级制"
+  description: "吸收天地灵气，修炼己身，最终超脱天道"
+
+# ==================== 境界划分 ====================
+realms:
+  - name: "凡人"
+    level: 0
+    description: "未开始修炼的普通人"
+    power_range: [1, 10]
+  
+  - name: "炼气期"
+    level: 1
+    stages: ["初期", "中期", "后期", "巅峰"]
+    description: "吸收天地灵气，淬炼肉身"
+    power_range: [10, 100]
+    lifespan: 150
+    
+    breakthrough:
+      to_next: "筑基期"
+      requirements:
+        - "修为达到炼气巅峰"
+        - "需要筑基丹或特殊机缘"
+      success_rate:
+        base: 30
+        with_pill: 70
+        with_opportunity: 90
+  
+  - name: "筑基期"
+    level: 2
+    stages: ["初期", "中期", "后期", "巅峰"]
+    description: "铸造道基，凝练真元"
+    power_range: [100, 1000]
+    lifespan: 300
+    
+    abilities:
+      - "御剑飞行"
+      - "神识初现"
+  
+  - name: "金丹期"
+    level: 3
+    stages: ["初期", "中期", "后期", "巅峰"]
+    description: "凝聚金丹，寿元大增"
+    power_range: [1000, 10000]
+    lifespan: 800
+  
+  - name: "元婴期"
+    level: 4
+    stages: ["初期", "中期", "后期", "巅峰"]
+    description: "元婴出窍，神通广大"
+    power_range: [10000, 100000]
+    lifespan: 2000
+  
+  - name: "化神期"
+    level: 5
+    stages: ["初期", "中期", "后期", "巅峰"]
+    description: "元神化形，参悟天地"
+    power_range: [100000, 1000000]
+    lifespan: 5000
+
+# ==================== 特殊体质 ====================
+constitutions:
+  - id: "const_heavenly_dao"
+    name: "天道体"
+    rarity: "unique"
+    description: "天生与天道亲和，修炼速度极快"
+    effects:
+      cultivation_speed: 10.0
+      breakthrough_bonus: 50
+    special_abilities:
+      - "天道感应"
+      - "天劫减免"

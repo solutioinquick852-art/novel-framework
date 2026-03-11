@@ -1,0 +1,20 @@
+automation:
+  auto_commit:
+    delay: 5
+    enabled: true
+  auto_count:
+    enabled: true
+foreshadowing:
+  reminder_threshold: 20
+language:
+  allow_english: false
+  primary: zh-CN
+  whitelist: .novel/whitelist.txt
+novel:
+  author: 作者
+  genre: 玄幻
+  status: ongoing
+  target_words: 3000000
+  title: '22'
+stats:
+  snapshot_interval: 10

@@ -1,0 +1,45 @@
+# 角色关系图
+
+# ==================== 关系定义 ====================
+relations:
+  # 叶凡的关系
+  - from: "char_ye_fan"
+    to: "char_lin_yao"
+    type: "lover"            # lover/friend/enemy/mentor/family/rival
+    strength: 100            # 关系强度 0-100
+    since_chapter: 1
+    description: "青梅竹马，情投意合"
+  
+  # 可扩展更多关系
+
+# ==================== 关系类型定义 ====================
+relation_types:
+  lover:
+    name: "恋人"
+    color: "#FF69B4"
+    bidirectional: true
+  
+  friend:
+    name: "朋友"
+    color: "#4169E1"
+    bidirectional: true
+  
+  enemy:
+    name: "敌人"
+    color: "#FF0000"
+    bidirectional: true
+  
+  mentor:
+    name: "师徒"
+    color: "#32CD32"
+    bidirectional: false
+  
+  family:
+    name: "家人"
+    color: "#FFD700"
+    bidirectional: true
+  
+  rival:
+    name: "对手"
+    color: "#FF8C00"
+    bidirectional: true

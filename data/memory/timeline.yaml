@@ -1,0 +1,32 @@
+# 事件时间线
+
+# ==================== 时间线事件 ====================
+events:
+  - chapter: 1
+    type: "重要事件"
+    title: "叶凡觉醒失败"
+    description: "叶凡在成人礼觉醒仪式上失败，被家族视为废物"
+    characters:
+      - "叶凡"
+      - "叶家主"
+    tags:
+      - "开篇"
+      - "转折"
+  
+  - chapter: 1
+    type: "机缘"
+    title: "获得天道传承"
+    description: "神秘老者出现，赠予叶凡神秘玉佩"
+    characters:
+      - "叶凡"
+      - "神秘老者"
+    foreshadowing:
+      - "fs_001"
+    tags:
+      - "金手指"
+      - "伏笔"
+
+# ==================== 时间线配置 ====================
+config:
+  auto_update: true          # 自动从章节中提取事件
+  max_events_per_chapter: 5  # 每章最多记录事件数

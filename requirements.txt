@@ -1,0 +1,15 @@
+# AI网文小说写作框架 - Python依赖
+# 版本: 1.0
+
+# 核心依赖
+PyYAML>=6.0
+click>=8.0.0
+rich>=13.0.0
+pathlib2>=2.3.0; python_version < '3.4'
+
+# 可选依赖
+# 用于高级功能，基础使用不需要
+# chromadb>=0.4.0        # 向量检索
+# jinja2>=3.0.0          # 模板渲染
+# watchdog>=3.0.0        # 文件监控
+# sqlite3                # 内置，无需安装

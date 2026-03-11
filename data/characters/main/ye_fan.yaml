@@ -1,0 +1,65 @@
+# 主角：叶凡
+# 示例角色数据
+
+# ==================== 基本信息 ====================
+id: "char_ye_fan"
+name: "叶凡"
+role: "protagonist"          # protagonist/antagonist/support
+first_appear: 1
+
+# ==================== 角色设定 ====================
+profile:
+  full_name: "叶凡"
+  age: 18
+  gender: "男"
+  origin: "青云镇"
+  
+  appearance: |
+    身材修长，剑眉星目，气质不凡。
+    常穿一袭青衫，腰间挂着神秘玉佩。
+  
+  personality:
+    traits: ["坚毅", "果断", "重情义", "谨慎"]
+    speech_style: "简洁有力，不喜废话"
+  
+  background: |
+    青云镇叶家少主，自幼天赋异禀。
+    十八岁成人礼上觉醒失败，被视为废物。
+    实则被神秘传承选中，开启逆天崛起之路。
+
+# ==================== 当前状态 ====================
+current_state:
+  chapter: 1                    # 最新更新章节
+  cultivation_level: "凡人"
+  faction: "叶家"
+  location: "青云镇"
+  
+  # 状态标记
+  status_effects:
+    - name: "天道传承"
+      permanent: true
+
+# ==================== 成长轨迹 ====================
+growth:
+  milestones:
+    - chapter: 1
+      event: "觉醒天道传承"
+      changes:
+        - "获得神秘玉佩"
+        - "开启修炼之路"
+
+# ==================== 重要物品 ====================
+items:
+  - id: "item_jade_pendant"
+    name: "神秘玉佩"
+    obtained_chapter: 1
+    description: "传承自上古，来历不明"
+    foreshadowing_id: "fs_001"
+    importance: "critical"
+
+# ==================== 关系网络 ====================
+relationships:
+  - target_id: "char_lin_yao"
+    type: "lover"
+    since_chapter: 1
+    description: "青梅竹马"
